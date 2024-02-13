@@ -5,11 +5,12 @@
 }
 body {
     min-height: 100dvh;
-    width:100%;
+    width: 100%;
     display: grid;
     place-items: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    letter-spacing : 1px;
     position: absolute;
     background-color: #60a9ff;
     color: #016ff9;
@@ -17,7 +18,7 @@ body {
 }
 h2 {
     color: #888888;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: light;
     margin: 2rem 0;
 }
@@ -26,13 +27,13 @@ img {
 }
 .panel {
     position: relative;
-    top: 50;
     display: flex;
     justify-content: center;
     max-width: 960px;
     text-transform: uppercase;
     border-radius: 30px;
     background-color: white;
+    padding: 20px;
 }
 .pricing-plan {
     display: flex;
@@ -45,11 +46,20 @@ img {
     border-right: 1px solid #e1f1ff;
     padding: 25px 50px;
 }
+.pricing-plan:last-child {
+    border-right: none;
+}
 .pricing-features-item {
     padding: 20px 10px;
     border-bottom: 1px solid #e1f1ff;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 600;
 }
+
+.pricing-features-item:first-child {
+    border-top: 1px solid #e1f1ff;
+}
+
 ul {
     list-style: none;
 }
@@ -57,25 +67,26 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:20px;
+    margin-top: 30px;
     font-size: 2rem;
     font-weight: 700;
 }
-.pricing-button{
+.pricing-button {
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    width:150px;
-    height:50px;
-    margin:20px 0;
+    width: 150px;
+    height: 50px;
+    margin: 30px 0;
     border: 1px solid #60a9ff;
-    color:#60a9ff;
+    color: #60a9ff;
     border-radius: 10px;
 }
-.is-featured{
-    background-color:#60a9ff;
-    color:white;
+.is-featured {
+    background-color: #68c0fe;
+    border: none;
+    color: white;
 }
 @media (min-width: 900px) {
 }
