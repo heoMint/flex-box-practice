@@ -10,7 +10,7 @@ body {
     place-items: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    letter-spacing : 1px;
+    letter-spacing: 1px;
     position: absolute;
     background-color: #60a9ff;
     color: #016ff9;
@@ -28,6 +28,7 @@ img {
 .panel {
     position: relative;
     display: flex;
+
     justify-content: center;
     max-width: 960px;
     text-transform: uppercase;
@@ -42,13 +43,9 @@ img {
     text-align: center;
     width: 100%;
     max-width: 960px;
-    padding: 15px 25px;
-    border-right: 1px solid #e1f1ff;
     padding: 25px 50px;
 }
-.pricing-plan:last-child {
-    border-right: none;
-}
+
 .pricing-features-item {
     padding: 20px 10px;
     border-bottom: 1px solid #e1f1ff;
@@ -83,10 +80,24 @@ ul {
     color: #60a9ff;
     border-radius: 10px;
 }
+.pricing-button:hover {
+    background-color: #edf8ffbe;
+    transition: 0.3s ease-in;
+}
 .is-featured {
     background-color: #68c0fe;
     border: none;
     color: white;
 }
-@media (min-width: 900px) {
+.is-featured:hover {
+    background-color: #35a0ed;
+    border: none;
+    color: white;
+}
+@media (max-width: 700px) {
+    .panel {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
